@@ -4,6 +4,7 @@
 
 * ### [1. Тема, целевая аудитория](#1)
 * ### [2. Расчет нагрузки](#2)
+* ### [3. Глобальная балансировка](#3)
 
 ## 1 Тема и целевая аудитория<a name="1"></a>
 
@@ -86,10 +87,26 @@ RPS = 5208
 | Создание объявлений                 | 8 Мбит/c                      | 16 Мбит/c                     |
 | Подбор объявлений                   | 20 Гбит/с                     | 40 Гбит/c                     |
 
+### 3 Глобальная балансировка<a name="3"></a>
+
+## 3.1 Расположение
+
+Яндекс.Директ - сервис, ориентированный на Российский рынок, следовательно датацентры разумно будет разместить на территории РФ. Самые густонаселённые регионы РФ - ЦФО и ЮФО [^7]. В каждом из них разместим по 1 датацентру: один в Москве, один в Краснодаре. Для обеспечения быстрого доступа в дальневосточных областях страны один ЦОД разместим во Владивостоке.
+
+![plotnost](https://github.com/Rioskill/TP-Highload-2023H2/assets/50636500/e92a94d8-9bae-4865-8d9b-6615c6d49b34)
+
+## 3.2 Методы глобальной балансировки
+
+Для балансировки между датацентрами будем использовать следующие методы:
+
+- Latency-based DNS для определения датацентра с наименьшей задержкой для клиента
+- BGP Anycast для определения ближайшего датацентра в рамках DNS зоны
+
 ## Источники
-[^1]: https://radar.yandex.ru/
-[^2]: https://www.digitalthirdcoast.com/blog/google-ads-statistics
-[^3]: https://prodima.vn/en/what-is-the-reach-of-the-google-display-network/
-[^4]: https://yastatic.net/s3/ir-docs/financials/2015/4Q2015_RUS.pdf
-[^5]: https://yastatic.net/s3/ir-docs/financials/2023/2Q2023_RUS.pdf
-[^6]: https://ya.ru/project/admoderation/2023#screen01
+[^1]: [Статистика по аудитории Яндекса](https://radar.yandex.ru/)
+[^2]: [Общая статистика Google Ads](https://www.digitalthirdcoast.com/blog/google-ads-statistics)
+[^3]: [Статистика по аудитории Google Ads](https://prodima.vn/en/what-is-the-reach-of-the-google-display-network/)
+[^4]: [Финансовый отчёт Яндекса 2015](https://yastatic.net/s3/ir-docs/financials/2015/4Q2015_RUS.pdf)
+[^5]: [Финансовый отчёт Янедкса 2023](https://yastatic.net/s3/ir-docs/financials/2023/2Q2023_RUS.pdf)
+[^6]: [Отчёт Яндекса по модерации рекламы](https://ya.ru/project/admoderation/2023#screen01)
+[^7]: [Плотность населения РФ](https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D1%81%D1%83%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8)
