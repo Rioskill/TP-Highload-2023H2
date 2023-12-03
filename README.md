@@ -485,17 +485,17 @@
 
 | Название                 | Хостинг | Конфигурация | Cores | Cnt | Покупка (1шт.) | Амортизация (5 лет) |
 | ------------------------ | ------- | ------------ | ----- | --- | ------- | ------ |
-| Подбор объявлений        | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 54 | €14000 | €2800 |
-| Сбор статистики          | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 6  | €14000 | €2800 |
-| Отчёты                   | own | 1xIntel Xeon E-2378/1x8ГБ 3200MHz DDR4/1xNVMe256Gb | 8 | 3  | €1500  | €300  |
-| Авторизация              | own | 1xIntel Xeon E-2314/1x8ГБ 3200MHz DDR4/1xNVMe256Gb | 4 | 2  | €1000  | €250  |
-| API Gateway (клиенты)    | own | 1xAMD EPYC 7272/2x8ГБ 3200MHz DDR4/1xNVMe256Gb   | 12  | 2  | €3500  | €700  |
-| API Gateway (посетители) | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 11 | €14000 | €2800 |
-| Балансировщики           | own | 1xAMD EPYC 7443P/2x8ГБ 3200MHz DDR4/1xNVMe256Gb  | 24  | 7  | €4500  | €900  |
-| ScyllaDB                 | own | 1xAMD EPYC 9754/4x64ГБ 4200MHz DDR5/4xHDD2.4Tb   | 128 | 6  | €17800 | €3560 |
-| ClickHouse               | own | 1xAMD EPYC 9754/4x64ГБ 4200MHz DDR5/4xHDD2.4Tb   | 128 | 6  | €17800 | €3560 |
-| Tarantool                | own | 1xIntel Xeon E-2314/2x16ГБ 3200MHz DDR4/1xNVMe256Gb| 4 | 6  | €1700  | €340  |
-| Объектное хранилище      | own | 1xAMD EPYC 7232P/2x8ГБ 3200MHz DDR4/20xHDD20TB   | 8   | 54 | €3400  | €680  |
+| Подбор объявлений        | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 54 | €14000 | €234 |
+| Сбор статистики          | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 6  | €14000 | €234 |
+| Отчёты                   | own | 1xIntel Xeon E-2378/1x8ГБ 3200MHz DDR4/1xNVMe256Gb | 8 | 3  | €1500  | €25  |
+| Авторизация              | own | 1xIntel Xeon E-2314/1x8ГБ 3200MHz DDR4/1xNVMe256Gb | 4 | 2  | €1000  | €21  |
+| API Gateway (клиенты)    | own | 1xAMD EPYC 7272/2x8ГБ 3200MHz DDR4/1xNVMe256Gb   | 12  | 2  | €3500  | €59  |
+| API Gateway (посетители) | own | 2xAMD EPYC 7773X/2x16ГБ 3200MHz DDR4/1xNVMe256Gb | 128 | 11 | €14000 | €234 |
+| Балансировщики           | own | 1xAMD EPYC 7443P/2x8ГБ 3200MHz DDR4/1xNVMe256Gb  | 24  | 7  | €4500  | €75  |
+| ScyllaDB                 | own | 1xAMD EPYC 9754/4x64ГБ 4200MHz DDR5/4xHDD2.4Tb   | 128 | 6  | €17800 | €297 |
+| ClickHouse               | own | 1xAMD EPYC 9754/4x64ГБ 4200MHz DDR5/4xHDD2.4Tb   | 128 | 6  | €17800 | €297 |
+| Tarantool                | own | 1xIntel Xeon E-2314/2x16ГБ 3200MHz DDR4/1xNVMe256Gb| 4 | 6  | €1700  | €29  |
+| Объектное хранилище      | own | 1xAMD EPYC 7232P/2x8ГБ 3200MHz DDR4/20xHDD20TB   | 8   | 54 | €3400  | €57  |
 
 ## Распределение ресурсов в оркестрации
 
